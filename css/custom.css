@@ -1,0 +1,16 @@
+.reveal strong, 
+.reveal b {
+  color: #30B5B0;
+}
+
+.word-red {
+	color: red;
+}
+
+.word-blue {
+	color: #3F88C5;
+}
+
+code {
+	color: #c7254e;
+}

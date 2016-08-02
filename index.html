@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>reveal.js</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- slide 1 -->
+      <section>
+        <h2>
+          <span class="word-red">IOH</span>
+          <span class="word-blue">Html Introduction</span>
+        </h2>
+        <hr>
+        <p>present by arfullight</p>
+      </section>
+
+      <!-- slide 2 why you should understand html -->
+      <section>
+        <section>
+          <h2>為什麼要上這堂課？</h2>
+        </section>
+        <section>
+          <blockquote>1. 工作需要</blockquote>
+        </section>
+        <section>
+          <h3>東吳國貿系 徐維謙</h3>
+          <img src="img/dashboard.png" alt="dashboard">
+        </section>
+        <section>
+          放大來看(簡化過)
+<pre><code data-trim class="html">
+<h1>
+  <b>PART 1：關於就讀東吳國貿系的經驗分享</b>
+</h1>
+
+<strong>
+  <span style="color: #993300;">逐夢的熱血青年</span>
+</strong>
+
+<p style="text-align: justify;">
+  「在這四年會讓我成長，是因為面對挫折的勇氣，我蛻變，是因為我...
+</p>
+
+<strong>
+  <span style="color: #993300;">行銷學的啟發</span>
+</strong>
+</code></pre>
+        </section>
+        <section>
+          看不懂？
+        </section>
+        <section>
+          <h3>What if？</h3>
+          <ul>
+            <li class="fragment fade-up">一個小地方出錯</li>
+            <li class="fragment fade-up">
+              想改變字的 <b>顏色</b> 或 <span class="word-blue">排版</span>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <blockquote>2. 建立自己的優勢</blockquote>
+        </section>
+        <section>網路的世代，無論你未來做什麼相信都會對你有幫助</section>
+        <section>尤其是在網路業，了解原理為你大大加分</section>
+      </section>
+
+      <!-- slide 3 environment -->
+      <section>
+        <section><h2>環境建制</h2></section>
+        <section>
+          <p>開始之前請先安裝 <b>ATOM</b> 編輯器</p>
+          <blockquote>
+            <a href="https://atom.io/" target="_blank">https://atom.io/</a>
+          </blockquote>
+        </section>
+        <section>然後？</section>
+        <section>別懷疑，你已經完成了！</section>
+      </section>
+      
+      <!-- slide 4 what is html -->
+      <section>
+        <section data-markdown>
+          <script type="text/template">
+            ## what is HTML?
+            <hr>
+            **H**yper **T**ext **M**arkup **L**anguage
+          </script>
+        </section>
+        <section>
+          <p>聽懂了嗎？</p>
+          <p class="fragment fade-up">沒關係我也不懂</p>
+        </section>
+        <section>簡單來說就是一種電腦看得懂的文字</section>
+      </section>
+
+      <!-- slide 5 實作一 -->
+      <section>
+        <section>
+          <blockquote>實作一</blockquote>
+          <p>建立你的第一個 Html 檔案</p>
+        </section>
+        <section>
+          <p>打開你的文字編輯器</p> 
+        </section>
+        <section>建立 <code>index.html</code> 檔案</section>
+        <section>
+          <p><code>右鍵</code> 用你最常用的瀏覽器開啟</p>
+          <p class="fragment fake-in">你的第一個 Html 檔案完成了！</p>
+        </section>
+        <section>
+          <p>可是不同地方的字想要不一樣大怎麼辦？</p>
+          <ul>
+            <li class="fragment fade-in">標題要大一點，內文要小一點</li>
+            <li class="fragment fade-in">瀏覽器怎麼分辨哪段是標題哪段是內文？</li>
+          </ul>
+        </section>
+        <section><p>用 <code>tag</code> 來標示</p></section>
+        <section>
+<pre><code data-trim class="html">
+<h1>This is header 1</h1>
+<h2>This is header 2</h2>
+<p>This is a paragraph.</p>
+</code></pre>
+        </section>
+        <section>現在為之前的檔案加上 <code>tag</code> 吧！</section>
+        <section>那有些沒有顯示在瀏覽器上的資訊怎麼辦？</section>
+        <section>
+          <p>這才是完整的 Html 骨架</p>
+<pre><code data-trim class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    <!-- your content here -->
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        </section>
+        <section>
+          <p>在你的編輯器輸入 <code>html</code> 然後按下 <code>tab</code></p>
+          <p class="fragment fade-in">Enjoy the magic !</p>
+        </section>
+      </section>
+
+      <!-- slide 6 實作二 -->
+      <section>
+        <section><h2>Tag 介紹</h2></section>
+        <section>
+          <blockquote>實作二</blockquote>
+          <p>寫一個網頁介紹自己</p>
+        </section>
+        <section>
+          <h3>headers</h3>
+          <blockquote><code>&lt;h1&gt;</code> ~ <code>&lt;h6&gt;</code></blockquote>
+        </section>
+        <section>
+          <h3>paragraph</h3>
+          <blockquote><code>&lt;p&gt;&lt;/p&gt;</code></blockquote>
+        </section>
+        <section>
+          <h3>break</h3>
+          <blockquote><code>&lt;br&gt;</code></blockquote>
+        </section>
+        <section>
+          <h3>preformatted text</h3>
+          <blockquote><code>&lt;pre&gt;&lt;/pre&gt;</code></blockquote>
+        </section>
+        <section>
+          <p><b>Bold</b> & <i>Italic</i></p>
+          <blockquote>
+            <code>&lt;b&gt;&lt;/b&gt;</code><br>
+            <code>&lt;i&gt;&lt;/i&gt;</code>
+          </blockquote>
+        </section>
+        <section>
+          <h3>link</h3>
+          <p>(anchor & hyper reference)</p>
+          <blockquote><code>&lt;a href=""&gt;&lt;/a&gt;</code></blockquote>
+        </section>
+        <section>
+          <h3>image</h3>
+          <p><span class="word-red">No ending tag</span> (source)</p>
+          <blockquote><code>&lt;img src=""&gt;</code></blockquote>
+        </section>
+        <section>
+          <h3>unordered list</h3>
+          <p>(list item)</p>
+          <blockquote>
+            <code>&lt;ul&gt;</code><br>
+            <code>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;&lt;/li&gt;</code><br>
+            <code>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;&lt;/li&gt;</code><br>
+            <code>&lt;/ul&gt;</code>
+          </blockquote>
+        </section>
+        <section>
+          <h3>ordered list</h3>
+          <p>(list item)</p>
+          <blockquote>
+            <code>&lt;ol&gt;</code><br>
+            <code>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;&lt;/li&gt;</code><br>
+            <code>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;li&gt;&lt;/li&gt;</code><br>
+            <code>&lt;/ol&gt;</code>
+          </blockquote>
+        </section>
+        <section>
+          <h3>comment</h3>
+          <p>給人看的，電腦會直接忽略</p>
+          <blockquote>
+            <code>&lt;!-- write anything here --&gt;</code>
+          </blockquote>
+        </section>
+        <section>
+          <p>基本上會用到的就這些</p>
+        </section>
+        <section>
+          <h3>文件資源</h3>
+          <ul>
+            <li><a href="http://www.w3schools.com/">w3school</a></li>
+            <li><a href="https://developer.mozilla.org/">Mozilla Developer Network</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>自學資源</h3>
+          <ul>
+            <li><a href="https://www.codecademy.com/">codecademy</a></li>
+            <li><a href="https://www.khanacademy.org/">KHAN ACADEMY</a></li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- slide 7 區塊 -->
+      <section>
+        <section>
+          <h2>div & span</h2>
+          <p>區塊</p>
+        </section>
+        <section>可以包住任何地方，但不會又任何改變</section>
+        <section>
+          <p>主要是用於分類，利於樣式的處理</p>
+          <blockquote>後面會講到</blockquote>
+        </section>
+        <section>兩者的差別在於 <code>div</code> 會換行</section>
+      </section>
+
+      <!-- slide 8 styling -->
+      <section>
+        <section>
+          <h2>css</h2>
+          <hr>
+          <b>C</b>ascading <b>S</b>tyle <b>S</b>heets
+        </section>
+        <section>教到這裡你可能會想</section>
+        <section>不對啊！我看過的網站不是長這樣啊！</section>
+        <section>不！就是長這樣！</section>
+        <section>隨便給我一個網站我證明給你看</section>
+        <section>
+          <p>如果說 Html 是網頁的骨架，那 css 就是皮跟肉</p>
+        </section>
+        <section>
+          <p>The <b>style</b> attribute</p>
+<pre><code data-trim class="html">
+<span style="color: red;">red word</span>
+<span style="background-color: blue;">blue background</span>
+<span style="border: 1px solid green;">green border</span>
+</code></pre>
+          <blockquote style="padding: 20px;">
+            <span style="color: red;">red word</span>
+            <span style="background-color: green;">green background</span>
+            <span style="border: 2px solid white;">white border</span>
+          </blockquote>
+        </section>
+        <section>
+          <p>css 提供非常多可以去調整的性質</p>
+          <p>幾乎可以說只有你想不到，沒有你做不到</p>
+        </section>
+        <section>
+          但是好的工程師不會用 <code>style</code> 甚至提倡不使用
+        </section>
+        <section>
+          <p>舉徐維謙講座中一小段 code 為例</p>
+<pre><code data-trim class="html">
+<p style="color: #666666; text-align: center;">穿過百年歷史的長河</p>
+<p style="color: #666666; text-align: center;">堅持站在時代尖端</p>
+<p style="color: #666666; text-align: center;">以嶄新的視野邁向未來</p>
+</code></pre>
+        </section>
+        <section>這段 code 出了什麼問題？</section>
+        <section>同樣的樣式重複出現了很多次</section>
+        <section>
+          <h3>這樣的程式</h3>
+          <ul>
+            <li class="fragment fade-in">要重複寫很麻煩</li>
+            <li class="fragment fade-in">未來如果想要修改，很難維護</li>
+            <li class="fragment fade-in">樣式太多畫面很雜很難看</li>
+          </ul>
+        </section>
+        <section>
+          <p>所以我們可能會這樣寫</p>
+<pre><code data-trim class="html">
+<style>
+  p {
+    color: #666666;
+    text-align: center;
+  }
+</style>
+</code></pre>
+        </section>
+        <section>這樣所有 <code>&lt;p&gt;</code> 都會改動</section>
+        <section>未來修改也只要改一個地方</section>
+        <section><h3>Html css 分開管理</h3></section>
+        <section>在同個目錄下建立 <code>my.css</code> 檔案</section>
+        <section>
+          <p>並在 <code>&lt;/head&gt;</code> 前面加上</p>
+          <blockquote style="font-size: 28px;">
+            <code>&lt;link rel="stylesheet" href="my.css"&gt;</code>
+          </blockquote>
+        </section>
+      </section>
+
+      <!-- slide 9 class and id -->
+      <section>
+        <section>
+          <h2>class & id</h2>
+          <hr>
+          <p>順便 live demo css</p>
+        </section>
+        <section>一次只能調整同一種 tag 不好用</section>
+        <section>用 class 跟 id 來為你自訂的樣式命名</section>
+        <section>
+          <h3>Html</h3>
+<pre><code data-trim class="html">
+<div id="my-button">click me</div>
+<div class="btn">btn 1</div>
+<div class="btn">btn 2</div>
+</code></pre>
+          <h3>Css</h3>
+<pre><code data-trim class="css">
+#my-button {
+  cursor: pointer;
+  background-color: green;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+}
+</code></pre>
+        </section>
+        <section>一個 id 只能被一個元素使用，class 則可以多次使用</section>
+        <section>
+          <p>Live Demo 自製按鈕</p>
+<pre><code data-trim class="css">
+#my-button {
+  background-color: red;
+  display: inline-block;
+  border-radius: 4px;
+  color: white;
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid red;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#my-button:hover {
+  position: relative;
+  top: 3px;
+  box-shadow: 0 3px 0 0 rgba(0,0,0,0.2);
+}
+</code></pre>
+        </section>
+        <section>css 潛能是無限的，什麼都可以被包裝成另一個東西</section>
+      </section>
+
+      <!-- slide 10 bootstrap -->
+      <section>
+        <section>
+          <h2>bootstrap</h2>
+          <hr>
+          <p>誰說 css 一定要自己寫？</p>
+        </section>
+        <section>
+          <p>Bootstrap 是一包別人幫你寫好的 css</p>
+          <p>你只需要引入即可</p>
+        </section>
+        <section>
+          <p>如果你需要一個按鈕</p>
+          <p>引入 <code>btn btn-defualt</code> 這個 class</p>
+        </section>
+        <section>
+          <p>還有更神奇的</p>
+          <blockquote>
+            燈箱效果 Modal 實作
+          </blockquote> 
+        </section>
+      </section>
+      
+      <!-- slide 11 wordpress -->
+      <section>
+        <section>每個頁面重複的部分很多，難道要一直複製貼上？</section>
+        <section>那如果突然要改，要全部一起改不是很麻煩？</section>
+        <section>
+          <p>最後一個主題</p>
+          <p>wordpress 架構講解</p>
+        </section>
+        <section>真實的網頁是一塊一塊拼湊出來的</section>
+        <section>
+          <p>我們網站分成</p>
+          <ul>
+            <li>header</li>
+            <li>content</li>
+            <li>footer</li>
+          </ul>
+        </section>
+        <section>
+          <p>contetn 裡面又有</p>
+          <ul>
+            <li>sidebar</li>
+            <li>page-header</li>
+            <li>main</li>
+          </ul>
+        </section>
+        <section>
+          <p>每一個部分都有一個自己的檔案</p>
+          <p>在使用者看到之前再把他們組裝在一起</p>
+        </section>
+        <section>
+          <p>而後台編輯的內容會被塞到 <code>main</code> 裡面</p>
+          <p>所以你們不必寫出所有的 Html</p>
+          <p>只要專注在那一小塊裡面就行</p>
+        </section>
+      </section>
+
+      <!-- slide 12 end -->
+      <section>
+        <p>感謝聆聽！</p>
+        <p style="font-size: 23px;">接下來的時間我希望可以讓大家做完自己的自我介紹，有想做做不出來的東西都可以現場問。</p>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- js -->
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/notes/notes.js' }
+      ]
+    });
+  </script>
+</body>
+</html>
